@@ -183,7 +183,15 @@ main {
     color: #4d2ea0;
     text-decoration-line: none;
 }
+img {
+    width: 100%;
+}
 
+.image-wrapper {
+    flex-basis: 800px;
+    flex-grow: 0;
+    flex-shrink: 1;
+}
 /* --------------- 4.0 Area 3 ------------------------- */
 .article-container {
     display: flex;
