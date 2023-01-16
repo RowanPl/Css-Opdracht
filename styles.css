@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto:ital,wght@1,300&display=swap');
+
+/*////////////////////////
+    Table of Contents
+    1. Global Styles
+    2. Typography
+    3. colors
+    4. Areas
+
+        3.1 Area 1
+        3.2 Area 2
+        3.3 etc.
+////////////////////////*/
+/* ------------------------------- 1. Global Styles -------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration-line: none;
+}
+
+/* ------------------------------- 2. Typography ----------------------------------- */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Merriweather', serif;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* ------------------------------- 3. Colors ---------------------------------------- */
+
+/*Paars #5722CD;*/
+/*Blauw #4845E4;*/
+/*Roze #ED4385;*/
+/*Zwart #0C0C0C (voor standaard tekst);*/
+/*Lichtpaars #F2F0FF (voor de grote zwevende woorden, zoals "hello" en "services") Uitzonderingen*/
+/* Lichtgrijs #F3F6F9 (voor de achtergrond van de projecten)*/
+/*Grijs #7A7A7A (voor de service-tegel tekst);*/
+
+/* ------------------------------- 4. Areas ---------------------------------------- */
+body {
+
+
+}
+
+.outer-container {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+
+}
+
+.inner-container {
+    height: auto;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 600px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 70px;
+    gap: 100px;
+}
+
+.outer-container-footer {
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: black;
+    font-size: 13px;
+}
+
+/* --------------- 4.0 Area 1 ------------------------- */
+header {
+    background-image: linear-gradient(to bottom right, #4845E4, #4d2ea0);
+    width: 100%;
+    height: 30vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.header_content__cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80px;
+    justify-content: center;
+    max-width: 100vw;
+}
+
+#header {
+    position: relative;
+}
+
+.header_squiggle {
+    background-image: url("assets/squiggle_line_stripe.svg");
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    bottom: 0;
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    gap: 20px;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    flex-basis: auto;
+    justify-content: flex-end;
+    gap: 25px;
+    flex-grow: 0;
+    flex-shrink: 1;
+}
+
+.link_colour:link, .link_colour:visited {
+    text-decoration-line: none;
+    color: white;
+}
+
+header li {
+    flex-basis: auto;
+    list-style: none;
+    color: white;
+}
+
+header button {
+    background-color: #ED4385;
+    border-radius: 20px;
+    padding: 15px;
+    color: white;
+    border-color: #ED4385;
+    font-size: 13px;
+}
+
+header p {
+    padding: 30px;
+}
+
+header img {
+    padding-top: 50px;
+
+}
+
+
+/* --------------- 4.0 Area 2 ------------------------- */
+main {
+    display: flex;
+    flex-direction: column;
+    min-height: auto;
+    flex-basis: auto;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.inner-container-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    color: #4d2ea0;
+}
+
+.main--container--top {
+    flex-basis: auto;
+    display: flex;
+    flex-direction: column;
+    width: 45vw;
+    gap: 30px;
+    align-items: center;
+    padding-top: 60px
+}
+
+.main--link:visited {
+    color: #4d2ea0;
+    text-decoration-line: none;
+}
+img {
+    width: 100%;
+}
+
+.image-wrapper {
+    flex-basis: 800px;
+    flex-grow: 0;
+    flex-shrink: 1;
+}
+/* --------------- 4.0 Area 3 ------------------------- */
+.article-container {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.main--container--article {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 70px;
+}
+
+article h3 {
+    font-size: 30px;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+.main--img--squiggle {
+    max-width: 50px;
+}
+
+.main--container--article--border {
+    width: 25vw;
+    justify-content: flex-start;
+    gap: 0;
+    padding: 50px 10px;
+    border: 1px solid #4d2ea0;
+    color: #7A7A7A;
+}
+
+.main--container--article--border h4 {
+    color: #4d2ea0;
+}
+
+.main--container--article--border--flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 50px;
+
+}
+
+.main--container--article--border--img {
+    width: 60px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    gap: 0;
+}
+
+.main--container--article--h4 {
+    padding-bottom: 20px;
+}
+
+.main--form--layout {
+    background-image: linear-gradient(to bottom right, #4845E4, #4d2ea0);
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding-top: 50px;
+}
+
+.main--form--h4 {
+    color: white;
+    font-size: 30px;
+}
+
+.main--form--p {
+    color: white;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 30vw;
+
+}
+
+form > input {
+    margin-bottom: 30px;
+    height: 30px;
+    flex-grow: 1;
+
+}
+
+
+form > button {
+    background-color: #ED4385;
+    color: white;
+    border-radius: 30px;
+    height: 30px;
+    margin: 20px 90px 20px 90px;
+    border-color: #ED4385;
+
+}
